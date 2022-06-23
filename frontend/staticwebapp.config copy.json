@@ -19,6 +19,10 @@
           "clientIdSettingName": "AAD_CLIENT_ID",
           "clientSecretSettingName": "AAD_CLIENT_SECRET"
         }
+        //,
+        // "login": {
+        //   "loginParameters": ["resource=https://graph.microsoft.com"]
+        // }
       }
     }
   },
