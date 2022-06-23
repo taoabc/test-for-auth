@@ -16,7 +16,7 @@ module.exports = async function (context, req) {
   //     }
   // }
 
-  const r = await graphResult(user.accessToken);
+  //   const r = await graphResult(user.accessToken);
   const roles = ["admin", "reader"];
 
   context.res.json({
