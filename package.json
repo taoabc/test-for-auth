@@ -1,0 +1,20 @@
+{
+  "name": "test-for-auth",
+  "version": "1.0.0",
+  "description": "See [this tutorial](https://docs.microsoft.com/azure/static-web-apps/assign-roles-microsoft-graph) for more details.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taoabc/test-for-auth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taoabc/test-for-auth/issues"
+  },
+  "homepage": "https://github.com/taoabc/test-for-auth#readme"
+}
