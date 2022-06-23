@@ -17,7 +17,7 @@ module.exports = async function (context, req) {
   // }
 
   const r = await graphResult(user.accessToken);
-  const roles = ["admin", "authenticated", r, user];
+  const roles = ["admin", "reader"];
 
   context.res.json({
     roles,
