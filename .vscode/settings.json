@@ -1,4 +1,5 @@
 {
+    "editor.formatOnSave": true,
     "azureFunctions.deploySubpath": "api",
     "azureFunctions.postDeployTask": "npm install (functions)",
     "azureFunctions.projectLanguage": "JavaScript",
