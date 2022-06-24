@@ -25,7 +25,9 @@ module.exports = async function (context, req) {
 };
 
 async function isUserInGroup(groupId, bearerToken) {
-  const url = new URL("https://graph.microsoft.com/v1.0/me/memberOf");
+  const url = new URL(
+    "https://graph.microsoft.com/v1.0/me/memberOf/microsoft.graph.group"
+  );
   url.searchParams.append("$filter", `id eq '${groupId}'`);
   const response = await fetch(url, {
     method: "GET",
@@ -45,19 +47,19 @@ async function isUserInGroup(groupId, bearerToken) {
   return matchingGroups.length > 0;
 }
 
-async function graphResult(bearerToken) {
-  const url = new URL("https://graph.microsoft.com/v1.0/me/memberOf");
-  url.searchParams.append("$filter", `id eq '${groupId}'`);
-  const response = await fetch(url, {
-    method: "GET",
-    headers: {
-      Authorization: `Bearer ${bearerToken}`,
-    },
-  });
+// async function graphResult(bearerToken) {
+//   const url = new URL("https://graph.microsoft.com/v1.0/me/memberOf");
+//   url.searchParams.append("$filter", `id eq '${groupId}'`);
+//   const response = await fetch(url, {
+//     method: "GET",
+//     headers: {
+//       Authorization: `Bearer ${bearerToken}`,
+//     },
+//   });
 
-  if (response.status !== 200) {
-    return false;
-  }
+//   if (response.status !== 200) {
+//     return false;
+//   }
 
-  return response.json();
-}
+//   return response.json();
+// }
