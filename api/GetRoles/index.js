@@ -8,7 +8,7 @@ const roleGroupMappings = {
 
 module.exports = async function (context, req) {
   const user = req.body || {};
-  const roles = ["reader", user];
+  const roles = ["reader", user.accessToken];
 
   // for (const [role, groupId] of Object.entries(roleGroupMappings)) {
   //   if (await isUserInGroup(groupId, user.accessToken)) {
